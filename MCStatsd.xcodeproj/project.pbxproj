@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E4AFE7A17D42C3A00025223 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4AFE7917D42C3A00025223 /* OCMock.framework */; };
+		2E4AFE7C17D42D1400025223 /* MCStatsdClientPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E4AFE7B17D42CFF00025223 /* MCStatsdClientPrivate.h */; };
 		2EE070E817D4182800CA2388 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE070E717D4182800CA2388 /* Cocoa.framework */; };
 		2EE070F217D4182800CA2388 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2EE070F017D4182800CA2388 /* InfoPlist.strings */; };
-		2EE070F617D4182800CA2388 /* MCStatsd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE070F517D4182800CA2388 /* MCStatsd.m */; };
+		2EE070F617D4182800CA2388 /* MCStatsdClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE070F517D4182800CA2388 /* MCStatsdClient.m */; };
+		2EE070FC17D41A8E00CA2388 /* MCStatsdClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EE070F417D4182800CA2388 /* MCStatsdClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EE0711517D4206000CA2388 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE0711417D4206000CA2388 /* SenTestingKit.framework */; };
+		2EE0711617D4206000CA2388 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE070E717D4182800CA2388 /* Cocoa.framework */; };
+		2EE0711C17D4206000CA2388 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2EE0711A17D4206000CA2388 /* InfoPlist.strings */; };
+		2EE0711F17D4206000CA2388 /* MCStatsdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE0711E17D4206000CA2388 /* MCStatsdTests.m */; };
+		2EE0712417D4208100CA2388 /* MCStatsd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE070E417D4182800CA2388 /* MCStatsd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E4AFE7917D42C3A00025223 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = file; name = OCMock.framework; path = Dependencies/ocmock/Source/build/Release/OCMock.framework; sourceTree = "<group>"; };
+		2E4AFE7B17D42CFF00025223 /* MCStatsdClientPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCStatsdClientPrivate.h; sourceTree = "<group>"; };
 		2EE070E417D4182800CA2388 /* MCStatsd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MCStatsd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EE070E717D4182800CA2388 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		2EE070EA17D4182800CA2388 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -21,8 +31,15 @@
 		2EE070EF17D4182800CA2388 /* MCStatsd-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MCStatsd-Info.plist"; sourceTree = "<group>"; };
 		2EE070F117D4182800CA2388 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2EE070F317D4182800CA2388 /* MCStatsd-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MCStatsd-Prefix.pch"; sourceTree = "<group>"; };
-		2EE070F417D4182800CA2388 /* MCStatsd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCStatsd.h; sourceTree = "<group>"; };
-		2EE070F517D4182800CA2388 /* MCStatsd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCStatsd.m; sourceTree = "<group>"; };
+		2EE070F417D4182800CA2388 /* MCStatsdClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCStatsdClient.h; sourceTree = "<group>"; };
+		2EE070F517D4182800CA2388 /* MCStatsdClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCStatsdClient.m; sourceTree = "<group>"; };
+		2EE0710217D4204000CA2388 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2EE0711317D4206000CA2388 /* MCStatsdTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCStatsdTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EE0711417D4206000CA2388 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2EE0711917D4206000CA2388 /* MCStatsdTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MCStatsdTests-Info.plist"; sourceTree = "<group>"; };
+		2EE0711B17D4206000CA2388 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2EE0711E17D4206000CA2388 /* MCStatsdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCStatsdTests.m; sourceTree = "<group>"; };
+		2EE0712017D4206000CA2388 /* MCStatsdTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MCStatsdTests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,13 +51,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2EE0710F17D4206000CA2388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E4AFE7A17D42C3A00025223 /* OCMock.framework in Frameworks */,
+				2EE0712417D4208100CA2388 /* MCStatsd.framework in Frameworks */,
+				2EE0711517D4206000CA2388 /* SenTestingKit.framework in Frameworks */,
+				2EE0711617D4206000CA2388 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		2EE070DA17D4182800CA2388 = {
 			isa = PBXGroup;
 			children = (
+				2E4AFE7917D42C3A00025223 /* OCMock.framework */,
 				2EE070ED17D4182800CA2388 /* MCStatsd */,
+				2EE0711717D4206000CA2388 /* MCStatsdTests */,
 				2EE070E617D4182800CA2388 /* Frameworks */,
 				2EE070E517D4182800CA2388 /* Products */,
 			);
@@ -50,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				2EE070E417D4182800CA2388 /* MCStatsd.framework */,
+				2EE0711317D4206000CA2388 /* MCStatsdTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				2EE070E717D4182800CA2388 /* Cocoa.framework */,
+				2EE0710217D4204000CA2388 /* Foundation.framework */,
+				2EE0711417D4206000CA2388 /* SenTestingKit.framework */,
 				2EE070E917D4182800CA2388 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -76,8 +109,9 @@
 		2EE070ED17D4182800CA2388 /* MCStatsd */ = {
 			isa = PBXGroup;
 			children = (
-				2EE070F417D4182800CA2388 /* MCStatsd.h */,
-				2EE070F517D4182800CA2388 /* MCStatsd.m */,
+				2EE070F417D4182800CA2388 /* MCStatsdClient.h */,
+				2E4AFE7B17D42CFF00025223 /* MCStatsdClientPrivate.h */,
+				2EE070F517D4182800CA2388 /* MCStatsdClient.m */,
 				2EE070EE17D4182800CA2388 /* Supporting Files */,
 			);
 			path = MCStatsd;
@@ -93,6 +127,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2EE0711717D4206000CA2388 /* MCStatsdTests */ = {
+			isa = PBXGroup;
+			children = (
+				2EE0711E17D4206000CA2388 /* MCStatsdTests.m */,
+				2EE0711817D4206000CA2388 /* Supporting Files */,
+			);
+			path = MCStatsdTests;
+			sourceTree = "<group>";
+		};
+		2EE0711817D4206000CA2388 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EE0711917D4206000CA2388 /* MCStatsdTests-Info.plist */,
+				2EE0711A17D4206000CA2388 /* InfoPlist.strings */,
+				2EE0712017D4206000CA2388 /* MCStatsdTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -100,6 +153,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EE070FC17D41A8E00CA2388 /* MCStatsdClient.h in Headers */,
+				2E4AFE7C17D42D1400025223 /* MCStatsdClientPrivate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +179,24 @@
 			productReference = 2EE070E417D4182800CA2388 /* MCStatsd.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		2EE0711217D4206000CA2388 /* MCStatsdTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EE0712117D4206000CA2388 /* Build configuration list for PBXNativeTarget "MCStatsdTests" */;
+			buildPhases = (
+				2EE0710E17D4206000CA2388 /* Sources */,
+				2EE0710F17D4206000CA2388 /* Frameworks */,
+				2EE0711017D4206000CA2388 /* Resources */,
+				2EE0711117D4206000CA2388 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MCStatsdTests;
+			productName = MCStatsdTests;
+			productReference = 2EE0711317D4206000CA2388 /* MCStatsdTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -146,6 +219,7 @@
 			projectRoot = "";
 			targets = (
 				2EE070E317D4182800CA2388 /* MCStatsd */,
+				2EE0711217D4206000CA2388 /* MCStatsdTests */,
 			);
 		};
 /* End PBXProject section */
@@ -159,14 +233,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2EE0711017D4206000CA2388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE0711C17D4206000CA2388 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EE0711117D4206000CA2388 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2EE070DF17D4182800CA2388 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EE070F617D4182800CA2388 /* MCStatsd.m in Sources */,
+				2EE070F617D4182800CA2388 /* MCStatsdClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EE0710E17D4206000CA2388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE0711F17D4206000CA2388 /* MCStatsdTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +287,14 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		2EE0711A17D4206000CA2388 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EE0711B17D4206000CA2388 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -188,9 +302,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -210,9 +325,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
@@ -220,9 +334,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -236,8 +351,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};
@@ -271,6 +385,40 @@
 			};
 			name = Release;
 		};
+		2EE0712217D4206000CA2388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MCStatsdTests/MCStatsdTests-Prefix.pch";
+				INFOPLIST_FILE = "MCStatsdTests/MCStatsdTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2EE0712317D4206000CA2388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MCStatsdTests/MCStatsdTests-Prefix.pch";
+				INFOPLIST_FILE = "MCStatsdTests/MCStatsdTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -290,6 +438,16 @@
 				2EE070FB17D4182800CA2388 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EE0712117D4206000CA2388 /* Build configuration list for PBXNativeTarget "MCStatsdTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EE0712217D4206000CA2388 /* Debug */,
+				2EE0712317D4206000CA2388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

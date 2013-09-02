@@ -1,0 +1,15 @@
+build/*
+*.pbxuser
+*.mode2v3
+*.mode1v3
+*.xcworkspace
+xcuserdata
+ 
+# OSX Noise
+.DS_Store
+profile
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
