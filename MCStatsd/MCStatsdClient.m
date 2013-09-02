@@ -174,14 +174,14 @@ void init_statsd_queue() {
 }
 
 - (void)send:(NSString *)command {
-    
-    CFSocketError send_error = CFSocketSendData(self->socket,
-                                                NULL,
-                                                (CFDataRef)[command dataUsingEncoding:NSASCIIStringEncoding],
-                                                1);
-    if (send_error)
-        NSLog(@"SendData failed: %ldl", send_error);
-    
+    dispatch_async(statsd_queue, ^{
+        CFSocketError send_error = CFSocketSendData(self->socket,
+                                                    NULL,
+                                                    (CFDataRef)[command dataUsingEncoding:NSASCIIStringEncoding],
+                                                    1);
+        if (send_error)
+            NSLog(@"SendData failed: %ldl", send_error);
+    });
 }
 
 #pragma mark Public Methods
