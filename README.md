@@ -16,7 +16,7 @@ MCStatsdClient * client = [MCStatsdClient statsdClientWithAddress:[NSURL URLWith
 
 ```
 
-## Contributing to MCGraylog
+## Contributing to MCStatsd
 
 See CONTRIBUTING.markdown
 
